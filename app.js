@@ -82,13 +82,36 @@
   //処理
 //}
 
-let max = 100;
-let num = 1;
-let count = 0;
+// let max = 100;
+// let num = 1;
+// let count = 0;
 
-while(num<max){
-  num =num * 2;
-  count = count + 1;
+// while(num<max){
+  // num =num * 2;
+  // count = count + 1;
+// }
+
+// alert('2をかけ続けて' + max + 'を超えるのに必要だった回数は' + count + '回です');
+
+
+//do...while文
+//do{
+ //最低一回は行われる処理
+//}while(条件式);
+
+//for文
+//for(初期値;条件式;増減値){
+  //繰り返し処理
+//}
+
+let i;
+//変数iを宣言
+let num = 0;
+//変数num」を宣言し、初期値を「0」に設定
+for(i = 1;i < 11;i ++){
+  //変数iの初期値を「1」に設定,変数iが「11」未満のときは変数iに1を足す   （「i++」は「i = i+1」と同じ） 
+  num = num + i;
+  //変数numに「num+i」を代入
 }
 
-alert('2をかけ続けて' + max + 'を超えるのに必要だった回数は' + count + '回です');
+alert('1から10まで足し算した結果は' + num + 'です');
